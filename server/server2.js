@@ -12,7 +12,7 @@ const redisPublisher = Redis.createClient();
 const redisSubscriber = Redis.createClient();
 
 const PUBLIC_FOLDER = path.join(__dirname, "../public");
-const PORT = 5002 || 5000;
+const PORT = 5002;
 
 const socketsPerChannels = new Map();
 const channelsPerSocket = new WeakMap();
